@@ -117,34 +117,42 @@ T = [['.....',
       '..0..',
       '.....']]
 
+#made a dictionary for pieces
 pieces = {
     "Z_reverse" : {
         "shape" : Z_reverse,
-        "color" : (0, 255, 0)
+        "color" : (0, 255, 0),
+        "name" : "Z_reverse"
     },
         "Z" : {
         "shape" : Z,
-        "color" : (255, 0, 0)
+        "color" : (255, 0, 0),
+        "name" : "Z"
     },
         "I" : {
         "shape" : I,
-        "color" : (0, 255, 255)
+        "color" : (0, 255, 255),
+        "name" : "I"
     },
         "O" : {
         "shape" : O,
-        "color" : (255, 255, 0)
+        "color" : (255, 255, 0),
+        "name" : "O"
     },
         "L_reverse" : {
         "shape" : L_reverse,
-        "color" : (255, 165, 0)
+        "color" : (255, 165, 0),
+        "name" : "L_reverse"
     },
         "L" : {
         "shape" : L,
-        "color" : (0, 0, 255)
+        "color" : (0, 0, 255),
+        "name" : "L"
     },
         "T" : {
         "shape" : T,
-        "color" : (128, 0, 128)
+        "color" : (128, 0, 128),
+        "name" : "T"
     }
 }
 

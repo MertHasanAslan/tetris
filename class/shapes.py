@@ -1,6 +1,6 @@
-
-from config import game_config
+import random
 from config.shapes_config import pieces
+from utils.piece_utility import *
 """
 This game will be original tetris-like
 height = 20, width = 10
@@ -15,13 +15,14 @@ tetris symbols:
     T - purple
 """
 
-class piece():
-    def __init__(self, x, y, shape, shape_name, shape_color):
+class tetris_piece():
+    def __init__(self, x, y):
+        self.piece = random_piece()
         self.x = x
         self.y = y
-        self.shape = shape
-        self.name = shape_name
-        self.color = shape_color
+        self.name = get_piece_name(self.piece)
+        self.shape = get_piece_shape(self.piece)
+        self.color = get_piece_color(self.piece)
         self.rotation = 0
 
     #This function will return current form of piece
@@ -32,7 +33,5 @@ class piece():
     def rotate(self):
         self.rotation = (self.rotation + 1) % len(self.shape)
 
-
-    
 
 
