@@ -1,5 +1,5 @@
 
-
+from config import game_config
 from config.shapes_config import pieces
 """
 This game will be original tetris-like
